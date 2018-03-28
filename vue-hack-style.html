@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+    <title>vue-hack-style</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue"></script>
+
+    <h1>Using <code>&lt;style&gt;</code> directly in the template, having reactive CSS.</h1>
+
+    <div id="app" class="stuff">
+        <vue-hack-style>
+            .stuff input {
+            background: {{bgColor}};
+            }
+        </vue-hack-style>
+
+        Remove "red" and type "yellow":
+        <input class="setting" type="text" v-model="bgColor">
+    </div>
+    <script type="text/javascript">
+        Vue.component('vue-hack-style', {
+            render: function (createElement) {
+                return createElement('style', this.$slots.default)
+            }
+        });
+
+        // demo usage, check the template
+        new Vue({
+            el: '#app',
+            data: {
+                bgColor: 'red'
+            }
+        })
+    </script>
+</body>
+</html>
