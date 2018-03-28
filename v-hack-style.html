@@ -3,7 +3,7 @@
 <head>
     <style>
     </style>
-    <title>vue-hack-style</title>
+    <title>v-hack-style</title>
 </head>
 <body>
     <script src="https://unpkg.com/vue"></script>
@@ -11,17 +11,17 @@
     <h1>Using <code>&lt;style&gt;</code> directly in the template, having reactive CSS.</h1>
 
     <div id="app" class="stuff">
-        <vue-hack-style>
+        <v-hack-style>
             .stuff input {
             background: {{bgColor}};
             }
-        </vue-hack-style>
+        </v-hack-style>
 
         Remove "red" and type "yellow":
         <input class="setting" type="text" v-model="bgColor">
     </div>
     <script type="text/javascript">
-        Vue.component('vue-hack-style', {
+        Vue.component('v-hack-style', {
             render: function (createElement) {
                 return createElement('style', this.$slots.default)
             }
