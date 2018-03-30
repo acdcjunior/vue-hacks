@@ -3,6 +3,7 @@ Collection of components you shouldn't use with Vue, but you do anyway.
 
 For each individual component, check its HTML.
 
+<br><br><br>
 
 # Vue common mistakes
 
