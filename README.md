@@ -7,7 +7,7 @@ For each individual component, check its HTML.
 
 # Vue common mistakes
 
-- Creating new properties in an existing object without using `Vue.set`
+- [Change Detection/Reactivity Caveats](https://vuejs.org/v2/guide/reactivity.html#Change-Detection-Caveats) Creating new properties in an existing object without using `Vue.set`
 - Using arrow functions when declaring `data`, `methods`, `watch`ers and `computed`s.
   - https://stackoverflow.com/a/49580445/1850609
 
