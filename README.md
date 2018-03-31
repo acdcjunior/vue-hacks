@@ -10,6 +10,7 @@ For each individual component, check its HTML.
 1. [Change Detection/Reactivity Caveats](https://vuejs.org/v2/guide/reactivity.html#Change-Detection-Caveats) Creating new properties in an existing object without using `Vue.set`
 2. Using arrow functions when declaring `data`, `methods`, `watch`ers and `computed`s.
     - https://stackoverflow.com/a/49580445/1850609
+    - https://stackoverflow.com/a/48981021/1850609
 
 # Vue common requests (not necessarily mistakes)
 
