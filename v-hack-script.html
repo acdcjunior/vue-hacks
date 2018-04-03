@@ -8,9 +8,12 @@
 
 <h1>Using <code>&lt;script&gt;</code> directly in the template.</h1>
 
+Although the contents can be reactive, the <code>&lt;script&gt;</code> tag is only executed once.
+    Basically you want to use <code>v-once</code> with it, to avoid unnecessary updating.
+
 <div id="app" class="stuff">
-    <v-hack-script>
-        alert('{{ alertMessage }}');
+    <v-hack-script v-once>
+        alert("{{ alertMessage }}");
     </v-hack-script>
 
     You should see an alert box.
