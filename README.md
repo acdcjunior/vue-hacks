@@ -1,6 +1,9 @@
 # vue-hacks
 Collection of components you shouldn't use with Vue, but you do anyway.
 
+- [`<v-hack-style>`](v-hack-style.html) a reactive `<style>` tag within the component's `template`.
+- [`<v-hack-script>`](v-hack-script.html) a data-initializable (non-reactive) `<script>` tag within the component's `template`.
+
 For each individual component, check its HTML.
 
 <br><br><br>
